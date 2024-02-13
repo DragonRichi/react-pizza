@@ -1,0 +1,34 @@
+.headling {
+    margin-bottom: 40px !important;
+}
+.line {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0;
+    max-width: 512px;
+    span {
+        color: var(--primary-color);
+    }
+}
+.hr {
+    max-width: 512px;
+    margin: 0;
+    border: 1px solid #f1f2f3;
+}
+.price {
+    font-size: 19px;
+}
+.text {
+    font-size: 16px;
+    color: var(--text-color);
+}
+.totalCount {
+    font-weight: 300;
+}
+.checkout {
+    max-width: 512px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
