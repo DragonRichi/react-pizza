@@ -44,9 +44,10 @@ const router = createBrowserRouter([
         loader: async ({ params }) => {
           return defer({
             data: new Promise((resolve, reject) => {
-              setTimeout(() => {
-                axios.get(`${API_URL}/products/${params.id}`).then(data => resolve(data)).catch(e => reject(e))
-              }, 2000)
+              // setTimeout(() => {
+              //   axios.get(`${API_URL}/products/${params.id}`).then(data => resolve(data)).catch(e => reject(e))
+              // }, 2000)
+              axios.get(`${API_URL}/products/${params.id}`).then(data => resolve(data)).catch(e => reject(e))
             })
           })
         }
