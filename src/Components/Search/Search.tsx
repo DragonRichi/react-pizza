@@ -7,7 +7,7 @@ const Search = forwardRef<HTMLInputElement, SearchProps>(function Input({ isVali
     return (
         <div className={styles.inputWrapper}>
             <input ref={ref} className={classNames(styles.input, styles[`${className}`], { [styles["invalid"]]: isValid, })} {...props} />
-            <img src="/search-icon.svg" alt="search" className={styles.icon} />
+            <img src={`${import.meta.env.BASE_URL}/search-icon.svg`} alt="search" className={styles.icon} />
         </div>
     )
 })
