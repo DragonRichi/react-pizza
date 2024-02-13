@@ -28,7 +28,7 @@ export const Layout = () => {
         <div className={styles.layout}>
             <div className={styles.sidebar}>
                 <div className={styles.user}>
-                    <img src="/avatar.png" alt="ava" className={styles.avatar} />
+                    <img src={`${import.meta.env.BASE_URL}/avatar.png`} alt="ava" className={styles.avatar} />
                     <div className={styles.name}>{profile?.name}</div>
                     <div className={styles.email}>{profile?.email}</div>
                 </div>

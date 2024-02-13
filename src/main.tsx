@@ -71,7 +71,7 @@ const router = createBrowserRouter([
     path: "*",
     element: <ErrorPage />
   }
-], { basename: "/react-pizza" })
+], { basename: import.meta.env.BASE_URL })
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Provider store={store} >
