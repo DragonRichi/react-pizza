@@ -33,6 +33,15 @@
 }
 .title {
     margin-right: auto !important;
+    @media (max-width: 1024px) {
+        margin-right: 0 !important;
+    }
+}
+.mobileButtonCart {
+    display: none;
+    @media (max-width: 582px) {
+        display: block;
+    }
 }
 .product {
     max-width: 660px;
@@ -40,6 +49,10 @@
 .wrapper {
     display: flex;
     gap: 30px;
+    @media (max-width: 582px) {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
 }
 .image {
     border-radius: 25px;
@@ -58,4 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 582px) {
+        display: none;
+    }
 }

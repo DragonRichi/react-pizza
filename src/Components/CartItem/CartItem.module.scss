@@ -9,6 +9,9 @@
     gap: 20px;
     max-width: 512px;
     margin-bottom: 27px;
+    @media (max-width: 600px) {
+        max-width: 415px;
+    }
 }
 .actions {
     margin-left: auto;

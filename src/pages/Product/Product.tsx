@@ -27,6 +27,9 @@ export const Product = () => {
                         </div>
                         <div className={styles.wrapper}>
                             <img src={data.image} alt={data.name} className={styles.image} />
+                            <Button appearence="small" className={styles.mobileButtonCart} onClick={() => dispatch(addToCart(data.id))}>
+                                В корзину
+                            </Button>
                             <div className={styles.info}>
                                 <div className={styles.line}>
                                     <div className={styles.text}>Цена</div>

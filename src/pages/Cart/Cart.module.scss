@@ -9,11 +9,17 @@
     span {
         color: var(--primary-color);
     }
+    @media (max-width: 600px) {
+        max-width: 415px;
+    }
 }
 .hr {
     max-width: 512px;
     margin: 0;
     border: 1px solid #f1f2f3;
+    @media (max-width: 600px) {
+        max-width: 415px;
+    }
 }
 .price {
     font-size: 19px;

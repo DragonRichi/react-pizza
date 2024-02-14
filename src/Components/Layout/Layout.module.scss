@@ -16,6 +16,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        border-bottom: 1px solid var(--separator-color);
     }
 }
 .exit {
@@ -91,6 +92,7 @@
     padding: 40px 60px;
     @media (max-width: 1024px) {
         padding: 0 15px;
+        margin: 20px 0 0 0;
     }
 }
 .cartCount {
