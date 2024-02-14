@@ -1,7 +1,7 @@
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { Button } from "../Button/Button";
-import classNames from "classnames";
 import styles from './Layout.module.scss'
+import classNames from "classnames";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../store";
 import { fetchProfile, logout } from "../../store/UserSlice";
@@ -9,8 +9,10 @@ import { useEffect } from "react";
 import { resetCart } from "../../store/cart.slice";
 
 export const Layout = () => {
+
     const navigate = useNavigate()
     const dispatch = useDispatch<AppDispatch>()
+
     const profile = useSelector((item: RootState) => item.user.profile)
     const items = useSelector((item: RootState) => item.cart.items)
 
@@ -29,8 +31,10 @@ export const Layout = () => {
             <div className={styles.sidebar}>
                 <div className={styles.user}>
                     <img src={`${import.meta.env.BASE_URL}/avatar.png`} alt="ava" className={styles.avatar} />
-                    <div className={styles.name}>{profile?.name}</div>
-                    <div className={styles.email}>{profile?.email}</div>
+                    <div className={styles.userInfo}>
+                        <div className={styles.name}>{profile?.name}</div>
+                        <div className={styles.email}>{profile?.email}</div>
+                    </div>
                 </div>
                 <div className={styles.menu}>
                     <NavLink to={"/"} className={({ isActive }) => classNames(styles.link, {

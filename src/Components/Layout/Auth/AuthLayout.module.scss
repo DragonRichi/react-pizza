@@ -1,12 +1,21 @@
 .layout {
     display: flex;
     min-height: 100vh;
+    @media (max-width: 1024px) {
+        // display: none;
+        flex-direction: column;
+        padding: 0 15px;
+    }
 }
 .logo {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    // @media (max-width: 1024px) {
+    //     // display: none;
+    //     flex-direction: column;
+    // }
 }
 .content {
     display: flex;
@@ -14,4 +23,8 @@
     justify-content: center;
     flex: 1;
     border-left: 1px solid var(--separator-color);
+    @media (max-width: 1024px) {
+        border-left: none;
+        padding: 20px 0;
+    }
 }

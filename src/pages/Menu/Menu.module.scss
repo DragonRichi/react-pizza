@@ -1,4 +1,13 @@
 .head {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 1024px) {
+        justify-content: start;
+        gap: 40px;
+    }
+    @media (max-width: 520px) {
+        flex-direction: column;
+        // align-items: center;
+        gap: 10px;
+    }
 }
